@@ -1,7 +1,6 @@
 ---
 siteTitle: "Is my bus line changing?"
-siteCss: site.css
-siteJs: site.js
+
 ---
 
 <!DOCTYPE html>
@@ -9,20 +8,18 @@ siteJs: site.js
 
 <head>
 	{% include 'head' %}
-	{% include 'tracking-head' %}
+	{% include 'tracking/head' %}
 </head>
 
 <body>
-	{% include 'tracking-body' %}
+	{% include 'tracking/body' %}
 	{% include 'header' %}
 
 	{{ content }}
 
 	{% include 'footer' %}
 
-	<!-- <script src="https://lacmta.github.io/design-system/dist/js/uswds.min.js"></script> -->
-	<script src="js/{{ siteJs }}"></script>
-	{% include 'tracking-footer' %}
+	{% include 'tracking/footer' %}
 </body>
 
 </html>
