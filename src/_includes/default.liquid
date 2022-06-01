@@ -1,28 +1,28 @@
 ---
-siteTitle: "11ty"
-css: site.css
-js: site.js
+siteTitle: "Is my bus line changing?"
+siteCss: site.css
+siteJs: site.js
 ---
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://lacmta.github.io/design-system/dist/css/uswds.min.css" type="text/css">
-	<link rel="stylesheet" href="css/{{ css }}" type="text/css">
-
-	<script src="https://lacmta.github.io/design-system/dist/js/uswds-init.min.js"></script>
-	<title>{{ siteTitle }}</title>
+	{% include 'head' %}
+	{% include 'tracking-head' %}
 </head>
-<body>
-	{% include 'header' %}
-  
-	{{ content }}
-	</main>
 
-	<script src="https://lacmta.github.io/design-system/dist/js/uswds.min.js"></script>
-	<script src="js/{{ js }}"></script>
+<body>
+	{% include 'tracking-body' %}
+	{% include 'header' %}
+
+	{{ content }}
+
+	{% include 'footer' %}
+
+	<!-- <script src="https://lacmta.github.io/design-system/dist/js/uswds.min.js"></script> -->
+	<script src="js/{{ siteJs }}"></script>
+	{% include 'tracking-footer' %}
 </body>
+
 </html>
