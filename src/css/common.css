@@ -2,7 +2,7 @@ html, body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 400;
     overflow-x: hidden; /*  HORRIBLE STOPGAP. Something is making the page show a horizontal scrollbar!  */
-    height: 100%;
+    /* height: 100%; */ /* setting body and height to 100% prevents window.scrollTo from working */
 }
 
 h1 {
