@@ -1,0 +1,92 @@
+---
+layout: default
+css:
+- '/css/all-changes.css'
+- '/css/common.css'
+---
+
+<section id="all-header">
+	<div class="container">
+		<div class="row">
+			<h1 class="my-5">{{ allChanges.intro.header }}</h1>
+		</div>
+	</div>
+</section>
+
+<section id="all-summary" class="pt-4 pb-5">
+	<div class="container">
+		<div class="row">
+			<div class="mt-4 fw-bold">{{ allChanges.intro.summary }}</div>
+			<div class="mt-4 px-5">
+				Download a PDF version of this page in 
+				{% for item in allChanges.intro.pdfDownload.links %}
+					{% if item.url != "" %}
+						{% if foreloop.last == true %}
+						<a href="{{ item.url | url }}">{{ item.text }}</a>.
+						{% else %}
+						<a href="{{ item.url | url }}">{{ item.text }}</a>. 
+						{% endif %}
+					{% endif %}
+				{% endfor %}
+			</div>
+			{% for item in allChanges.intro.changes %}
+			<div class="mt-4 fw-bold">{{ item.description }}</div>
+			<div class="mt-4 px-5">{{ item.details }}</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section id="all-details" class="pt-4">
+	<div class="container">
+		<div class="row">
+			<h2 class="my-4">{{ allChanges.lineDetails.description }}</h2>
+			{% for item in allChanges.lineDetails.details %}
+			{% if item.content != null %}
+			<div class="py-4">
+				{{ item.content }}
+				{% if item.newSchedule != null and item.newSchedule != "" %}
+				<a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for Line {{ item.line
+					}}</a>.
+					{% elsif item.currentSchedule != null and item.currentSchedule != "" %}
+				<a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for Line {{
+					item.line }}</a>.
+				{% endif %}
+			</div>
+			{% else %}
+			<div class="py-4">
+				{{ item.line }} - 
+				{% if item.newSchedule != null and item.newSchedule != "" %}
+				<a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for Line {{ item.line
+					}}</a>.
+				{% elsif item.currentSchedule != null and item.currentSchedule != "" %}
+				No changes that affect schedule. 
+				<a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for Line {{
+					item.line }}</a>.
+				{% endif %}
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section id="all-end" class="mt-5 py-4">
+	<div class="container">
+		<div class="row">
+			<div class='d-flex mt-4'>
+				<img src='{{ '/img/phone-lang-icon.png' | url }}' alt='' /> <span class="phone">323.466.3876</span>
+			</div>
+			<div class="notranslate">
+				<p><strong>x2</strong> Español (Spanish)<br>
+					<strong>x3</strong> 中文 (Chinese Traditional)<br>
+					<strong>x4</strong> 한국어 (Korean)<br>
+					<strong>x5</strong> Tiếng Việt (Vietnamese)<br>
+					<strong>x6</strong> 日本語 (Japanese)<br>
+					<strong>x7</strong> русский (Russian)<br>
+					<strong>x8</strong> Армянский (Armenian)
+				</p>
+			</div>
+		</div>
+	</div>
+</section>

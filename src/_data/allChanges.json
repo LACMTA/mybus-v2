@@ -1,0 +1,796 @@
+{
+  "intro": {
+    "header": "Metro is making more service changes.",
+    "summary": "Metro is making service changes to most bus lines starting on Sunday, June 26, to provide our riders with more reliable and predictable service. The changes will add more frequent service restored to the busiest bus lines.",
+    "pdfDownload": {
+      "text": "Download a PDF version of this page in ",
+      "links": [
+        {
+          "text": "English",
+          "url": "/files/takeones/2022 June Service Change - English.pdf"
+        },
+        {
+          "text": "Español (Spanish)",
+          "url": ""
+        },
+        {
+          "text": "中文 (Chinese Traditional)",
+          "url": ""
+        },
+        {
+          "text": "한국어 (Korean)",
+          "url": ""
+        },
+        {
+          "text": "Tiếng Việt (Vietnamese)",
+          "url": ""
+        },
+        {
+          "text": "日本語 (Japanese)",
+          "url": ""
+        },
+        {
+          "text": "русский (Russian)",
+          "url": ""
+        },
+        {
+          "text": "Армянский (Armenian)",
+          "url": ""
+        }
+      ]
+    },
+    "changes": [
+      {
+        "description": "The following lines will have route modifications:",
+        "details": "4, 30, 33, 70, 106, 154, 164, 165, 605, 690 and L Line Shuttle. Line 130 will be discontinued."
+      },
+      {
+        "description": "The following lines will have revised schedules weekdays, Saturday and Sunday to improve service reliability:",
+        "details": "4, 16, 20, 30, 33, 81, 92, 94, 117, 150, 152, 154, 182, 204, 206, 222, 232, 236, 267, 603, 605, 690 and 720"
+      },
+      {
+        "description": "The following lines will have revised schedules weekdays only to improve service reliability:",
+        "details": "2, 10, 14, 20, 35/38, 37, 45, 48, 51, 53, 55, 60, 66, 70, 78, 81, 92, 102, 105, 108, 115, 117, 120, 125, 128, 152, 155, 161, 164, 165, 166, 167, 169, 205, 207, 210, 212, 217, 230, 240, 251, 260, 265, 487/489, 501, 577, 602, 754 and 761"
+      },
+      {
+        "description": "The following lines will have revised schedules Saturday only to improve service reliability:",
+        "details": "40, 51, 60, 70, 102, 105, 108, 111, 115, 162, 164, 205, 207, 258, 344, 460 and 754"
+      },
+      {
+        "description": "The following line will have revised schedules Sunday only to improve service reliability:",
+        "details": "258"
+      }
+    ]
+  },
+  "lineDetails": {
+    "description": "We’re modifying service on these bus lines:",
+    "details": [
+      {
+        "content": "2 – Improve weekday peak period frequency from every 10 minutes to every 7.5 minutes. Revised schedule weekday to improve service reliability.",
+        "line": 2,
+        "newSchedule": "/files/schedules/002_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "4 – New western terminus is located at 6th St north of Santa Monica Bl in Santa Monica, with updated route and stops. Revised schedule weekdays, Saturday and Sunday to improve service reliability.",
+        "line": 4,
+        "newSchedule": "/files/schedules/004_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 10,
+        "newSchedule": "/files/schedules/010_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 14,
+        "newSchedule": "/files/schedules/014_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "16 – Revised schedule weekdays, Saturday and Sunday to improve service reliability. Weekday peak period frequency improves, changing from every 7-7.5 minutes to every 5-6 minutes.",
+        "line": 16,
+        "newSchedule": "/files/schedules/016_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 18,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/ca3c7637-a7f0-4e53-a582-73e114ef91b6.pdf"
+      },
+      {
+        "content": null,
+        "line": 20,
+        "newSchedule": "/files/schedules/020_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "28 – Weekday peak period frequency improves, changing from every 10 minutes to every 6-8 minutes, and changes weekday midday from every 12 minutes to every 10 minutes.",
+        "line": 28,
+        "newSchedule": "/files/schedules/028_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "30 – Updated route northeast of downtown LA proceeds direct via 1st St in both directions (no longer Vignes St, Temple St, Judge John Aiso St) due to completed construction. Revised schedule weekdays, Saturday and Sunday to improve service reliability.",
+        "line": 30,
+        "newSchedule": "/files/schedules/030_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "33 – New western terminus at 5th St north of Santa Monica Bl in Santa Monica, with updated route and stops. Revised schedule weekdays, Saturday and Sunday to improve service reliability. Weekday frequency improves, changing from every 10 minutes to every 7.5 minutes, and Saturday and Sunday frequency changes from every 12 minutes to every 10 minutes.",
+        "line": 33,
+        "newSchedule": "/files/schedules/033_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 35,
+        "newSchedule": "/files/schedules/035_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 37,
+        "newSchedule": "/files/schedules/037_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 38,
+        "newSchedule": "/files/schedules/038_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 40,
+        "newSchedule": "/files/schedules/040_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 45,
+        "newSchedule": "/files/schedules/045_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 48,
+        "newSchedule": "/files/schedules/048_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "51 – Revised schedules weekdays and Saturday to improve service reliability. Improve weekday peak period frequency from every 6 minutes to every 5 minutes.",
+        "line": 51,
+        "newSchedule": "/files/schedules/051_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 53,
+        "newSchedule": "/files/schedules/053_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 55,
+        "newSchedule": "/files/schedules/055_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 60,
+        "newSchedule": "/files/schedules/060_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 62,
+        "newSchedule": null,
+        "currentSchedule": "https://www.metro.net/line-override/line-062/attachment/062_tt_06-27-21/"
+      },
+      {
+        "content": "66 – Revised schedule weekdays to improve service reliability. More trips weekdays, Saturday and Sunday for additional capacity.",
+        "line": 66,
+        "newSchedule": "/files/schedules/066_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "70 – Revised schedules weekdays and Saturday to improve service reliability. Updated route in south end of downtown LA, westbound via Grand Av & 18th St, eastbound via 17th & Olive St (matches Lines 76, 78).",
+        "line": 70,
+        "newSchedule": "/files/schedules/070_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 76,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/3eeb3713-24b6-4f2c-a0f9-534e38c6c260.pdf"
+      },
+      {
+        "content": null,
+        "line": 78,
+        "newSchedule": "/files/schedules/078_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "81 – Revised schedules weekdays, Saturday and Sunday to improve service reliability. Weekday frequency improves, changing from every 15-20 minutes to consistently every 15 minutes.",
+        "line": 81,
+        "newSchedule": "/files/schedules/081_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 90,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2022/02/27171940/090_TT_02-20-22.pdf"
+      },
+      {
+        "content": "92 – Revised schedules weekdays, Saturday and Sunday to improve service reliability. Saturday and Sunday service frequency improves, changing from every 40-45 minutes to every 30 minutes.",
+        "line": 92,
+        "newSchedule": "/files/schedules/092_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 94,
+        "newSchedule": "/files/schedules/094_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 96,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/a70bcd86-539c-4ff8-ba22-c32cdd6ad952.pdf"
+      },
+      {
+        "content": null,
+        "line": 102,
+        "newSchedule": "/files/schedules/102_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 105,
+        "newSchedule": "/files/schedules/105_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "106 – Revised route northeast of downtown LA, direct via 1st St in both directions (no longer Vignes St, Temple St) due to completed construction.",
+        "line": 106,
+        "newSchedule": null,
+        "currentSchedule": "https://www.metro.net/line-override/line-106/attachment/106_tt_09-12-21/"
+      },
+      {
+        "content": null,
+        "line": 108,
+        "newSchedule": "/files/schedules/108_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 110,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2022/02/27171940/110_TT_02-20-22.pdf"
+      },
+      {
+        "content": "111 – Weekday frequency improves, changing from every 12 minutes to every 10 minutes. Revised schedule Saturday to improve service reliability.",
+        "line": 111,
+        "newSchedule": "/files/schedules/111_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "115 – Revised schedules weekdays and Saturday to improve service reliability",
+        "line": 115,
+        "newSchedule": "/files/schedules/115_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 117,
+        "newSchedule": "/files/schedules/115_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 120,
+        "newSchedule": "/files/schedules/120_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "125 – Revised schedule weekdays, with midday frequency adjusted from every 20 minutes to every 30 minutes, based on ridership and to improve service reliability.",
+        "line": 125,
+        "newSchedule": "/files/schedules/125_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 127,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/51de6992-4c00-4bd7-bfcf-c1d49b514905.pdf"
+      },
+      {
+        "content": null,
+        "line": 128,
+        "newSchedule": "/files/schedules/128_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "130 – Line becomes Long Beach Transit Route 141 with same route and similar schedule to Metro Line 130, coordinated with Torrance Transit Line 13 at Artesia A Line (Blue) Station.",
+        "line": 130,
+        "newSchedule": "",
+        "currentSchedule": ""
+      },
+      {
+        "content": "150 – Revised schedules weekdays, Saturday and Sunday to improve service reliability. Weekday peak period frequency improves, changing from every 24 minutes to 20 minutes. Saturday and Sunday frequency improves, changing from every 45 minutes to every 30 minutes.",
+        "line": 150,
+        "newSchedule": "/files/schedules/150_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 152,
+        "newSchedule": "/files/schedules/152_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "154 – This line will return to its previous route via the reopened Burbank Bl bridge over I-5 freeway. Revised schedules weekdays, Saturday and Sunday to improve service reliability.",
+        "line": 154,
+        "newSchedule": "/files/schedules/154_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 155,
+        "newSchedule": "/files/schedules/155_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 158,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/db963f01-82c2-43bd-a72f-49cd4cc8ab1b.pdf"
+      },
+      {
+        "content": null,
+        "line": 161,
+        "newSchedule": "/files/schedules/161_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 162,
+        "newSchedule": "/files/schedules/162_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "164 – Updated Line 164 route will no longer travel west of Platt Av due to low ridership (this area will still be served by Line 169). Line 164 will travel eastbound via Platt Av, Vanowen St, Fallbrook Av to Victory Bl. Revised schedules weekdays and Saturday to improve service reliability.",
+        "line": 164,
+        "newSchedule": "/files/schedules/164_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "165 – Updated Line 165 route no longer travels west of Platt Av due to low ridership (this area will be served by Line 169). Westbound Line 165 will travel via Vanowen St, left on Fallbrook Av, right on Victory Bl and right on Platt Av. Revised schedule weekdays to improve service reliability. Weekday frequency improves, changing from every 15-20 minute to every 15 minutes, with westbound every 8 minutes during morning peak period for school ridership.",
+        "line": 165,
+        "newSchedule": "/files/schedules/165_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 166,
+        "newSchedule": "/files/schedules/166_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 167,
+        "newSchedule": "/files/schedules/167_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 169,
+        "newSchedule": "/files/schedules/169_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "177 – Revised schedule weekdays, with frequency changing to every 60 minutes instead of every 30 minutes due low ridership.",
+        "line": 177,
+        "newSchedule": "/files/schedules/177_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 179,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2022/02/27171938/179_TT_02-20-22.pdf"
+      },
+      {
+        "content": null,
+        "line": 180,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/71b9077d-ec5c-4f92-b1a2-128c273fb681.pdf"
+      },
+      {
+        "content": "182 – Revised schedules weekdays, Saturday and Sunday to improve service reliability. New bus stops at Fletcher Dr at Av 32 in both directions.",
+        "line": 182,
+        "newSchedule": "/files/schedules/182_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 202,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2021/12/17152902/202_TT_12-19-21.pdf"
+      },
+      {
+        "content": "204 – Weekday frequency improves, changing from every 12 minutes to every 10 minutes. Revised schedules weekdays, Saturday and Sunday to improve service reliability.",
+        "line": 204,
+        "newSchedule": "/files/schedules/204_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 205,
+        "newSchedule": "/files/schedules/205_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 206,
+        "newSchedule": "/files/schedules/206_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 207,
+        "newSchedule": "/files/schedules/207_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 209,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2021/12/17153017/209_TT_12-19-21.pdf"
+      },
+      {
+        "content": null,
+        "line": 210,
+        "newSchedule": "/files/schedules/210_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 211,
+        "newSchedule": null,
+        "currentSchedule": "https://www.metro.net/line-override/line-211-215/attachment/211-215_tt_09-12-21/"
+      },
+      {
+        "content": "212 – Revised schedule weekdays with more trips added to improve service reliability and capacity.",
+        "line": 212,
+        "newSchedule": "/files/schedules/212_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 215,
+        "newSchedule": null,
+        "currentSchedule": "https://www.metro.net/line-override/line-211-215/attachment/211-215_tt_09-12-21/"
+      },
+      {
+        "content": null,
+        "line": 217,
+        "newSchedule": "/files/schedules/217_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 218,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/40b632e0-32c3-4ce9-bfd3-b0942199b71d.pdf"
+      },
+      {
+        "content": null,
+        "line": 222,
+        "newSchedule": "/files/schedules/222_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 224,
+        "newSchedule": "/files/schedules/222_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "230 – Revised schedule weekdays to improve service reliability. Saturday frequency improves, changing from every 45 minutes to every 35 minutes.",
+        "line": 230,
+        "newSchedule": "/files/schedules/230_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "232 – Revised schedules weekdays, Saturday and Sunday to improve service reliability, with weekday peak service adjusted from every 15 minutes to every 20 minutes.",
+        "line": 232,
+        "newSchedule": "/files/schedules/232_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "233 – Weekday peak period frequency improves, changing from every 12 minutes to every 10 minutes.",
+        "line": 233,
+        "newSchedule": "/files/schedules/233_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 234,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2022/02/27171936/234_TT_02-20-22.pdf"
+      },
+      {
+        "content": null,
+        "line": 235,
+        "newSchedule": "/files/schedules/235-236_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 236,
+        "newSchedule": "/files/schedules/235-236_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 237,
+        "newSchedule": "/files/schedules/237_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 240,
+        "newSchedule": "/files/schedules/240_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 242,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2021/12/17153034/242-243_TT_12-19-21.pdf"
+      },
+      {
+        "content": null,
+        "line": 243,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2021/12/17153034/242-243_TT_12-19-21.pdf"
+      },
+      {
+        "content": null,
+        "line": 244,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2022/02/27171936/244_TT_02-20-22.pdf"
+      },
+      {
+        "content": null,
+        "line": 246,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/1a3aa921-bca1-4288-9c56-bff80231e0b5.pdf"
+      },
+      {
+        "content": "251 – Weekday peak period frequency improves, changing from every 9-10 minutes to every 7.5 minutes. Revised schedule weekdays to improve service reliability.",
+        "line": 251,
+        "newSchedule": "/files/schedules/251_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 256,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2021/12/17153041/256_TT_12-19-21.pdf"
+      },
+      {
+        "content": null,
+        "line": 258,
+        "newSchedule": "/files/schedules/258_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 260,
+        "newSchedule": "/files/schedules/260_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 265,
+        "newSchedule": "/files/schedules/265_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 266,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/20f9f54a-faa8-4d48-8324-1a61f66f8600.pdf"
+      },
+      {
+        "content": null,
+        "line": 267,
+        "newSchedule": "/files/schedules/267_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 268,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/line-schedules/line-268_1530813306.pdf"
+      },
+      {
+        "content": null,
+        "line": 287,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/line-schedules/line-el-monte-station-arcadia-station-via-santa-anita-av_1624051467.pdf"
+      },
+      {
+        "content": null,
+        "line": 294,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2021/12/17153049/294_TT_12-19-21.pdf"
+      },
+      {
+        "content": null,
+        "line": 344,
+        "newSchedule": "/files/schedules/344_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 460,
+        "newSchedule": "/files/schedules/460_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 487,
+        "newSchedule": "/files/schedules/487-489_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 489,
+        "newSchedule": "/files/schedules/487-489_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "501 – Revised schedule weekdays, with frequency adjusted to every 30 minutes peak periods weekdays, instead of every 20 minutes based on ridership and to improve service reliability.",
+        "line": 501,
+        "newSchedule": "/files/schedules/501_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 534,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/5948bbb4-34ac-4e8d-8a37-455502df5e2d.pdf"
+      },
+      {
+        "content": null,
+        "line": 550,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2021/12/17153055/550_TT_12-19-21.pdf"
+      },
+      {
+        "content": "577 – Revised schedule weekdays, with frequency changing to every 45 minutes instead of 30 minutes, based on ridership levels and to help ensure service operates reliably.",
+        "line": 577,
+        "newSchedule": "/files/schedules/577_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 601,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2021/12/17153056/601_TT_12-19-21.pdf"
+      },
+      {
+        "content": null,
+        "line": 602,
+        "newSchedule": "/files/schedules/602_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "603 – Revised schedules weekdays, Saturday and Sunday, with weekday and Saturday frequency changing from every 12 minutes to every 15 minutes, to match ridership and to improve reliability.",
+        "line": 603,
+        "newSchedule": "/files/schedules/603_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "605 – Revised schedules, with weekday frequency changing to every 20 minutes instead of every 15 minutes, and Saturday/Sunday frequency changing to every 40 minutes instead of 20 minutes, based on ridership levels and to help ensure service operates reliably. Southbound route information is updated to show the correct route via Mission Rd instead of State St.",
+        "line": 605,
+        "newSchedule": "/files/schedules/605_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 611,
+        "newSchedule": "/files/schedules/611_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 617,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2022/02/27171935/617_TT_02-20-22.pdf"
+      },
+      {
+        "content": null,
+        "line": 660,
+        "newSchedule": "",
+        "currentSchedule": "https://cdn.beta.metro.net/wp-content/uploads/2021/12/17153106/660_TT_12-19-21.pdf"
+      },
+      {
+        "content": null,
+        "line": 662,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/line-schedules/line-662_1624051798.pdf"
+      },
+      {
+        "content": null,
+        "line": 665,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/d09b0dcb-03a7-4ad8-9053-2aea0dd7f121.pdf"
+      },
+      {
+        "content": null,
+        "line": 686,
+        "newSchedule": null,
+        "currentSchedule": "https://media.metro.net/documents/e65ea2e0-9c12-4b14-8c89-afbf6c6f9974.pdf"
+      },
+      {
+        "content": "690 – Weekday peak period frequency improves, changing from every 50 minutes to every 25 minutes between Sylmar Station and Olive View Medical Center. Revised schedules weekdays, Saturday and Sunday to improve service reliability. At Olive View Medical Center, all Line 690 trips eastbound to Sunland will be rerouted counterclockwise at Olive View Medical Center via left on Reagan Rd, left on Mesa Av, left on Kennedy Rd, with two new bus stops (service westbound to Sylmar will continue clockwise at Olive View).",
+        "line": 690,
+        "newSchedule": "/files/schedules/690_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "720 – Revised schedules weekdays, Saturday and Sunday to improve service reliability. Weekday frequency during morning peak eastbound changes to every 4-5 minutes, westbound to every 3-5 minutes, and afternoon peak to every 5 minutes.",
+        "line": 720,
+        "newSchedule": "/files/schedules/720_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 754,
+        "newSchedule": "/files/schedules/754_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "761 – Revised schedule weekday to improve service reliability. Weekday frequency increased from every 20 minutes to every 15 minutes.",
+        "line": 761,
+        "newSchedule": "/files/schedules/761_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": null,
+        "line": 854,
+        "newSchedule": "/files/schedules/854_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "901 – Weekday peak period frequency improves, changing from every 7.5 minutes to every 6 minutes.",
+        "line": 901,
+        "newSchedule": "/files/schedules/901_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "910 – Weekday peak period frequency improves, changing from every 7.5 minutes to every 5 minutes between El Monte Station and Harbor Gateway Transit Center.",
+        "line": 910,
+        "newSchedule": "/files/schedules/910-950_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      },
+      {
+        "content": "950 – Weekday peak period frequency improves, changing from every 7.5 minutes to every 5 minutes between El Monte Station and Harbor Gateway Transit Center.",
+        "line": 950,
+        "newSchedule": "/files/schedules/910-950_TT_06-26-22.pdf",
+        "currentSchedule": ""
+      }
+    ]
+  }
+}
