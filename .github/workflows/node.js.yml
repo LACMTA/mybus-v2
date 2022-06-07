@@ -22,7 +22,7 @@ jobs:
         node-version: 12.x
         cache: 'npm'
     - name: Build Site
-      run: npm run prod:build
+      run: npm run test:build
     - name: Copy CNAME to docs/
       run: cp CNAME docs/
     - name: List files

@@ -5,7 +5,7 @@ const INTERNAL = URLPARAMS.get('internal');
 const DATA_PATH = 'data/';
 const LINE_NUMBERS_FILENAME = 'lines.json';
 const RESULTS_PAGE = 'bus.html';
-const ALL_CHANGES_PAGE = 'all-changes.html';
+const ALL_CHANGES_PAGE = 'allChanges/';
 const TRANSIT_PREVIEW_PAGE = 'transit.html';
 const NEXTGEN_PAGE = 'https://www.metro.net/projects/nextgen/';
 
