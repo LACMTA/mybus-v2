@@ -21,10 +21,10 @@ css:
 				Download a PDF version of this page in 
 				{% for item in allChanges.intro.pdfDownload.links %}
 					{% if item.url != "" %}
-						{% if foreloop.last == true %}
+						{% if forloop.last == true %}
 						<a href="{{ item.url | url }}">{{ item.text }}</a>.
 						{% else %}
-						<a href="{{ item.url | url }}">{{ item.text }}</a>. 
+						<a href="{{ item.url | url }}">{{ item.text }}</a>, 
 						{% endif %}
 					{% endif %}
 				{% endfor %}
