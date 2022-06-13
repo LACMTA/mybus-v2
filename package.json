@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev:serve": "NODE_ENV=dev npm run clean:serve",
-    "test:build": "NODE_ENV=test npm run clean:build",
+    "dev:build": "NODE_ENV=dev npm run clean:build",
     "prod:build": "NODE_ENV=prod npm run clean:build",
     "clean": "rm -rf docs",
     "build": "npx @11ty/eleventy",

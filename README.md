@@ -1,33 +1,59 @@
-# 11ty-web-template
+# MyBus v2.0
 
-Use this template for quick prototypes and simple websites.  This template uses the [Eleventy (11ty) static site generator](https://www.11ty.dev/).
+The MyBus site was re-implemented using [`LACMTA/11ty-web-template`](https://github.com/LACMTA/11ty-web-template).
 
 ## Quickstart
 
+### Install
+
 Use `node --version` to verify you're running Node 12 or newer.
 
-Download this repository.
+### Local Development
 
-Run this command to build serve the site:
+Run this command to build & serve the site locally. It will automatically rebuild and reload the site if any files are modified.
 
 ``` bash
-npm run start
+npm run dev:serve
 ```
 
-❗❗❗ If this is your first time, the `@11ty/eleventy` package will be installed. Type `y` when prompted to proceed.
+❗❗❗ If this is your first time running `@11ty/eleventy`, the package will be installed. Type `y` when prompted to proceed.
 
-Open `http://localhost:8080/` to view the site.
+Open `http://localhost:8080/` in your browser to view the site.
 
 ### Config
 
-Update the following files for each new project:
+`package.json` includes a few pre-defined scripts and a local environment variable to help with running/building the site.  The logic to check the environment variable and determine whether to build with the `pathPrefix` is in `.eleventy.js`.
 
-- `.eleventy.js` - update `pathPrefix`
-- `src/_includes/default.liquid` - update `siteTitle`
+| Command | `NODE_ENV` | Usage |
+| ------- | ---------- | ----- |
+| `npm run dev:serve` | `dev` | Use this locally while developing to build and serve the site for testing. By default, this will use the `pathPrefix` value (defined in `.eleventy.js`) but the `pathPrefix` only matters here if you are serving the site from a parent directory instead of the repo's directory. |
+| `npm run dev:build` | `dev` | Use this to build the site for deploying to a GitHub repo hosted via GitHub Pages **without** a custom domain. This is because the site's URL will be under a subdirectory: `<org-name>.github.io/<repo-name>/` and you will need the paths to be built accordingly. |
+| `npm run prod:build` | `prod` | Use this to build the site for deploying to a GitHub repo hosted via GitHub Pages **with** a custom domain. This will cause link paths to be built without a `pathPrefix`. |
 
-## Publish Using GitHub Pages
+`.github/workflows/node.js.yml` needs to use the npm command you want to be run via GitHub Actions:
 
-### 11ty Config
+``` yaml
+    - name: Build Site
+      run: npm run prod:build
+```
+
+### Development Notes
+
+Make sure links to site pages, assets, etc. are built relatively using this syntax:
+
+```
+{{ 'path' | url }}
+```
+
+Where `path` is the path to the resource under the `src` folder. It needs a leading `/`. Example:
+
+```
+/img/articulated-buses-mobile.png
+```
+
+## Using 11ty
+
+### Publishgin to GitHub Pages
 
 The `.eleventy.js` config file needs the following two settings for GitHub Pages publishing:
 
@@ -47,11 +73,9 @@ module.exports = function(eleventyConfig) {
 }
 ```
 
-### 11ty Ignored Files
+### Ignored Files
 
 The `.eleventyignore` works like other ignore files.  The `README.md` file is added here so that 11ty does not try to build the README into a page.
-
-## Notes
 
 ### NPM Setup
 
