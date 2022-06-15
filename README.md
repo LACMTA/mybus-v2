@@ -63,9 +63,9 @@ After receiving new PDFs from the Scheduling team, run this script using the fol
 npm run rename
 ```
 
-Props to [@scriptex for this Gist](https://gist.github.com/scriptex/20536d8cda36221f91d69a6bd4a528b3) and .
+Props to [@scriptex for this Gist](https://gist.github.com/scriptex/20536d8cda36221f91d69a6bd4a528b3).
 
-❗❗❗ TODO: populate the `_data/allChanges.json` file with these file names.
+❗❗❗ TODO: [populate the `_data/allChanges.json` file with these file names.](https://github.com/LACMTA/mybus-v2/issues/3)
 
 ### Landing Page
 
