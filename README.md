@@ -51,6 +51,31 @@ Where `path` is the path to the resource under the `src` folder. It needs a lead
 /img/articulated-buses-mobile.png
 ```
 
+## Updates
+
+### Schedule PDF File Name Normalization
+
+`rename.js` contains a script the checks all the schedule PDF file names and renames them to a standard format: `###_TT_MM-DD-YY.pdf` or `###-###_TT_MM-DD-YY.pdf`.
+
+After receiving new PDFs from the Scheduling team, run this script using the following command:
+
+``` bash
+npm run rename
+```
+
+Props to [@scriptex for this Gist](https://gist.github.com/scriptex/20536d8cda36221f91d69a6bd4a528b3).
+
+❗❗❗ TODO: [populate the `_data/allChanges.json` file with these file names.](https://github.com/LACMTA/mybus-v2/issues/3)
+
+### Landing Page
+
+The content on the landing page changes periodically.  The options have been separated into their own `include` files inside the `_includes/index/` folder:
+
+- Between Shakeups we use `_includes/index/email-signup.liquid` to display the email signup form.  
+- During shakeups we use one of these two options, depending on how complex the changes are:
+  - We use `_includes/index/all-changes.liquid` if the changes are not extensive and we decide to only link to the "All Changes" page.
+  - We use `_includes/index/select-line.liquid` if there are lots of extensive changes and we want to give the visitors line/stop-specific information.
+
 ## Using 11ty
 
 ### Publishgin to GitHub Pages
