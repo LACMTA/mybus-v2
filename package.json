@@ -4,6 +4,7 @@
   "description": "This website describes upcoming bus service changes for LA Metro.",
   "main": "index.js",
   "scripts": {
+    "rename": "node rename.js",
     "dev:serve": "NODE_ENV=dev npm run clean:serve",
     "dev:build": "NODE_ENV=dev npm run clean:build",
     "prod:build": "NODE_ENV=prod npm run clean:build",
