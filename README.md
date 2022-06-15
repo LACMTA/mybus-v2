@@ -57,7 +57,7 @@ Where `path` is the path to the resource under the `src` folder. It needs a lead
 
 `rename.js` contains a script the checks all the schedule PDF file names and renames them to a standard format: `###_TT_MM-DD-YY.pdf` or `###-###_TT_MM-DD-YY.pdf`.
 
-Run this script after receiving new PDFs from the Scheduling team.
+Run this script after receiving new PDFs from the Scheduling team.  Props to [@scriptex for this Gist](https://gist.github.com/scriptex/20536d8cda36221f91d69a6bd4a528b3) and .
 
 ❗❗❗ TODO: populate the `_data/allChanges.json` file with these file names.
 
