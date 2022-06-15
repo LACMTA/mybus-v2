@@ -7,7 +7,7 @@
     "dev:serve": "NODE_ENV=dev npm run clean:serve",
     "dev:build": "NODE_ENV=dev npm run clean:build",
     "prod:build": "NODE_ENV=prod npm run clean:build",
-    "clean": "rm -rf docs",
+    "clean": "npx rimraf docs",
     "build": "npx @11ty/eleventy",
     "clean:build": "npm run clean && npm run build",
     "serve": "npx @11ty/eleventy --serve",
