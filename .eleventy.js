@@ -5,7 +5,7 @@ console.log(process.env.NODE_ENV);
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(brokenLinksPlugin,{
-		broken: "error",
+		broken: "error"
 	});
 	eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("src/js");
