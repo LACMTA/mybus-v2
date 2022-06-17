@@ -21,6 +21,8 @@ jobs:
       with:
         node-version: 12.x
         cache: 'npm'
+    - name: Install dependencies
+      run: npm install     
     - name: Build Site
       run: npm run prod:build
     - name: Copy CNAME to docs/
