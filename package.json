@@ -18,5 +18,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LACMTA/mybus-v2.git"
+  },
+  "dependencies": {
+    "eleventy-plugin-broken-links": "^2.0.3"
   }
 }
