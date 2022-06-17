@@ -22,7 +22,7 @@ jobs:
         node-version: 12.x
         cache: 'npm'
     - name: Install dependencies
-      run: npm install     
+      run: npm install --silent
     - name: Build Site
       run: npm run prod:build
     - name: Copy CNAME to docs/
