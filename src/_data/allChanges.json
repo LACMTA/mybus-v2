@@ -770,24 +770,21 @@
       {
         "content": "",
         "line": 854,
+        "name": "L Line (Gold) Shuttle",
         "newSchedule": "/files/schedules/854_TT_06-26-22.pdf",
         "currentSchedule": ""
       },
       {
-        "content": "901 – Weekday peak period frequency improves, changing from every 7.5 minutes to every 6 minutes.",
+        "content": "Weekday peak period frequency improves, changing from every 7.5 minutes to every 6 minutes.",
         "line": 901,
+        "name": "G Line (Orange)",
         "newSchedule": "/files/schedules/901_TT_06-26-22.pdf",
         "currentSchedule": ""
       },
       {
-        "content": "910 – Weekday peak period frequency improves, changing from every 7.5 minutes to every 5 minutes between El Monte Station and Harbor Gateway Transit Center.",
+        "content": "Weekday peak period frequency improves, changing from every 7.5 minutes to every 5 minutes between El Monte Station and Harbor Gateway Transit Center.",
         "line": 910,
-        "newSchedule": "/files/schedules/910-950_TT_06-26-22.pdf",
-        "currentSchedule": ""
-      },
-      {
-        "content": "950 – Weekday peak period frequency improves, changing from every 7.5 minutes to every 5 minutes between El Monte Station and Harbor Gateway Transit Center.",
-        "line": 950,
+        "name": "J Line (Silver)",
         "newSchedule": "/files/schedules/910-950_TT_06-26-22.pdf",
         "currentSchedule": ""
       }

@@ -42,29 +42,40 @@ css:
 		<div class="row">
 			<h2 class="my-4">{{ allChanges.lineDetails.description }}</h2>
 			{% for item in allChanges.lineDetails.details %}
-			{% if item.content != null %}
-			<div class="py-4">
-				{{ item.content }}
-				{% if item.newSchedule != null and item.newSchedule != "" %}
-				<a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for Line {{ item.line
-					}}</a>.
-					{% elsif item.currentSchedule != null and item.currentSchedule != "" %}
-				<a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for Line {{
-					item.line }}</a>.
-				{% endif %}
-			</div>
+			{% if item.name != null and item.name != "" %}
+				<div class="py-4">
+					{{ item.name }} - {{ item.content }}
+					{% if item.newSchedule != null and item.newSchedule != "" %}
+					<a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for the {{ item.name
+						}}</a>.
+						{% elsif item.currentSchedule != null and item.currentSchedule != "" %}
+					<a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for the {{
+						item.name }}</a>.
+					{% endif %}
+				</div>
+			{% elsif item.content != null and item.content != "" %}
+				<div class="py-4">
+					{{ item.content }}
+					{% if item.newSchedule != null and item.newSchedule != "" %}
+					<a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for Line {{ item.line
+						}}</a>.
+						{% elsif item.currentSchedule != null and item.currentSchedule != "" %}
+					<a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for Line {{
+						item.line }}</a>.
+					{% endif %}
+				</div>
 			{% else %}
-			<div class="py-4">
-				{{ item.line }} - 
-				{% if item.newSchedule != null and item.newSchedule != "" %}
-				<a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for Line {{ item.line
-					}}</a>.
-				{% elsif item.currentSchedule != null and item.currentSchedule != "" %}
-				No changes that affect schedule. 
-				<a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for Line {{
-					item.line }}</a>.
-				{% endif %}
-			</div>
+				<div class="py-4">
+					{{ item.line }} - 
+					{% if item.newSchedule != null and item.newSchedule != "" %}
+					<a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for Line {{ item.line
+						}}</a>.
+					{% elsif item.currentSchedule != null and item.currentSchedule != "" %}
+					No changes that affect schedule. 
+					<a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for Line {{
+						item.line }}</a>.
+					{% endif %}
+				</div>
 			{% endif %}
 			{% endfor %}
 		</div>
