@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/js");
 	eleventyConfig.addPassthroughCopy("src/img");
 	eleventyConfig.addPassthroughCopy("src/files");
+	eleventyConfig.addPassthroughCopy("CNAME");
 
 	return {
 		pathPrefix: isProduction ? "" : "/mybus-v2/",
