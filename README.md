@@ -37,6 +37,27 @@ Open `http://localhost:8080/` in your browser to view the site.
       run: npm run prod:build
 ```
 
+### USWDS
+
+10/10 - Integrated USWDS by running `npm install uswds` and `npm install @uswds/compile`.  `gulpfile.js` configures the compiler and running `npx gulp init` initializes the folders defined in the configuration: `_theme/` and `assets/`.
+
+This line was added to `.elenventy.js`: `eleventyConfig.addPassthroughCopy("assets/uswds");`.
+
+CSS and JS files are linked to in `head.liquid`:
+
+``` html
+<link rel="stylesheet" href="{{ '/assets/uswds/css/styles.css' | url }}">
+<script src="{{ '/assets/uswds/js/uswds-init.min.js' | url }}"></script>
+```
+
+JS file also linked to at the bottom of `footer.liquid`:
+
+``` html
+<script src="{{ '/assets/uswds/js/uswds.min.js' | url }}"></script>
+```
+
+Run `npx gulp compile` to recompile the files.  Run `npx gulp watch` to watch the script for chnages and automatically recompile.
+
 ### Development Notes
 
 Make sure links to site pages, assets, etc. are built relatively using this syntax:
