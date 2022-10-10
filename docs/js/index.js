@@ -5,7 +5,7 @@ const INTERNAL = URLPARAMS.get('internal');
 const DATA_PATH = 'data/';
 const LINE_NUMBERS_FILENAME = 'lines.json';
 const RESULTS_PAGE = 'bus.html';
-const ALL_CHANGES_PAGE = 'allChanges/';
+const ALL_CHANGES_PAGE = 'all-changes/';
 const TRANSIT_PREVIEW_PAGE = 'transit.html';
 const NEXTGEN_PAGE = 'https://www.metro.net/projects/nextgen/';
 
@@ -191,7 +191,7 @@ function getLanguage() {
     if (googleFrame != null) {
         selectedLanguage = googleFrame.contentDocument.querySelector('.goog-te-menu2-item-selected');
 
-        if (selectedLanguage != null) {
+        if (selectedLanguage != null && selectedLanguage != '') {
             lang = selectedLanguage.value;
         }
     }
@@ -219,9 +219,13 @@ function clickRequestTransitPreview() {
 }
 
 function clickRequestAllChanges() {
+    lang = getLanguage();
+
+    lang = lang == '' ? 'en' : lang;
+
     if (INTERNAL) {
-        window.location = ALL_CHANGES_PAGE + '?internal=true&lang=' + getLanguage();
+        window.location = ALL_CHANGES_PAGE + '?internal=true&lang=' + lang;
     } else {
-        window.location = ALL_CHANGES_PAGE + '?lang=' + getLanguage();
+        window.location = ALL_CHANGES_PAGE + lang + '/';
     }
 }

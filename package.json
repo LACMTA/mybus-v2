@@ -20,6 +20,8 @@
     "url": "git+https://github.com/LACMTA/mybus-v2.git"
   },
   "dependencies": {
-    "eleventy-plugin-broken-links": "^2.0.3"
+    "@uswds/compile": "^1.0.0-beta.3",
+    "eleventy-plugin-broken-links": "^2.0.3",
+    "uswds": "^2.13.3"
   }
 }

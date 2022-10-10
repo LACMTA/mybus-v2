@@ -14,13 +14,15 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/js");
 	eleventyConfig.addPassthroughCopy("src/img");
 	eleventyConfig.addPassthroughCopy("src/files");
+	eleventyConfig.addPassthroughCopy("assets/uswds");
 	eleventyConfig.addPassthroughCopy("CNAME");
 
 	return {
 		pathPrefix: isProduction ? "" : "/mybus-v2/",
 		dir: {
 			input: "src",
-			output: "docs"
+			output: "docs",
+			data: "data"
 		}
 	};
 };

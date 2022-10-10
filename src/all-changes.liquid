@@ -1,0 +1,102 @@
+---
+layout: default
+css:
+- '/css/all-changes.css'
+- '/css/common.css'
+- '/css/site.css'
+pagination:
+  data: allChanges
+  size: 1
+  alias: allChanges
+permalink: "all-changes/{{ allChanges.lang | slug }}/"
+---
+
+<section class="usa-section" id="all-header">
+	<div class="grid-container">
+		<div class="grid-row">
+			<h1>{{ allChanges.content.intro.header }}</h1>
+		</div>
+	</div>
+</section>
+
+<section class="usa-section" id="all-summary">
+	<div class="grid-container">
+		<div class="grid-row">
+			<p class="text-bold">{{ allChanges.content.intro.details }}</p>
+			<div class="padding-x-4 padding-bottom-2">
+				{{ allChanges.content.takeones.description }}
+                {% for i in (0..7) %}
+                    {% if i == 7 %}
+						<a href="{{ allChanges.content.takeones.files[i].url | url }}">{{ allChanges.content.takeones.files[i].text }}</a>.
+                    {% else %}
+						<a href="{{ allChanges.content.takeones.files[i].url | url }}">{{ allChanges.content.takeones.files[i].text }}</a>, 
+                    {% endif %}
+                {% endfor %}
+
+			</div>
+            <div>
+                {% for item in allChanges.content.summary %}
+                    <p class="text-bold">{{ item.description }}</p>
+                    <div class="padding-x-4 padding-bottom-2">
+                        {{ item.details }}
+                    </div>
+                {% endfor %}
+            </div>
+		</div>
+	</div>
+</section>
+
+<section class="usa-section" id="all-details" class="pt-4">
+	<div class="grid-container">
+		<div class="grid-row">
+			<h2>We’re modifying service on these bus lines:</h2>
+			{% for item in allChanges.content.details %}
+                {% if item.label != "" %}
+                    <div class="padding-y-4">
+                        {{ item.label }} - {{ item.description }}
+
+                        {% if item.description != "" %}
+                            {% if item.newSchedule == "" %}
+                                New schedule coming soon.
+                            {% else %}
+                                <a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for the {{ item.label }}</a>.
+                            {% endif %}
+                        {% else %}
+                            {% if item.newSchedule != "" %}
+                                <a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for the {{ item.label }}</a>.
+                            {% elsif item.currentSchedule != "" %}
+                                No changes that affect schedule. 
+                                <a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for the {{ item.label }}</a>.
+                            {% else %}
+                                No schedule available.
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                {% elsif item.description != "" %}
+                    <div class="padding-y-4">
+                        {{ item.description }}
+                        {% if item.newSchedule != "" %}
+                        <a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for Line {{ item.label
+                            }}</a>.
+                            {% elsif item.currentSchedule != "" %}
+                        <a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for Line {{
+                            item.label }}</a>.
+                        {% endif %}
+                    </div>
+                {% else %}
+                    <div class="padding-y-4">
+                        {{ item.label }} - 
+                        {% if item.newSchedule != "" %}
+                        <a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for Line {{ item.label
+                            }}</a>.
+                        {% elsif item.currentSchedule != "" %}
+                        No changes that affect schedule. 
+                        <a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for Line {{
+                            item.label }}</a>.
+                        {% endif %}
+                    </div>
+                {% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
