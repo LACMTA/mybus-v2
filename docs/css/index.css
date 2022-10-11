@@ -1,9 +1,9 @@
-.section-select {
+/* .section-select {
     background-image: url('../img/articulated-buses-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
 .select-content {
     background: #fff;
@@ -66,12 +66,12 @@ button.cta {
 @media (min-width: 992px) {
 
 /************ Bus Image ************/
-#section-select {
+/* #section-select {
     background-image: url('../img/articulated-buses-desktop.png');
     background-position: center;
     background-size: cover;
     background-repeat: none;
-}
+} */
 
 .select-wrapper {
     background: #FFF;

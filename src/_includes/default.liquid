@@ -13,12 +13,16 @@ siteTitle: "Is my bus line changing?"
 
 <body>
 	{% include 'tracking/body' %}
-	{% include 'header' %}
+	<div class="container-outer display-flex flex-column">
+		{% include 'header' %}
 
-	{{ content }}
-
+		<div class="flex-1 display-flex flex-column">
+			{{ content }}
+		</div>
+		
+		{% include 'footer' %}
+	</div>
 	{% include 'tracking/footer' %}
-	{% include 'footer' %}
 </body>
 
 </html>
