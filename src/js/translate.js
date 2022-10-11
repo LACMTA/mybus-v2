@@ -1,8 +1,18 @@
+//  Google Translate widget not reloading on page after back button
+// This forces the page to reload
+(function () {
+	window.onpageshow = function(event) {
+		if (event.persisted) {
+			window.location.reload();
+		}
+	};
+})();
+
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
         pageLanguage: 'en',
         // includedLanguages: 'da,de,en,es,fr,hmn,hy,it,ja,km,ko,pt,ru,th,tl,vi,zh-CN,zh-TW',
-        includedLanguages: 'en,es,zh-CN,zh-TW,ko,vi,ja,ru,hy',
+        includedLanguages: 'en,es,zh-TW,ko,vi,ja,ru,hy',
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
         autoDisplay: false,
         gaTrack: true,
@@ -80,27 +90,34 @@ function updateLanguageNames() {
         switch (langItems[i].querySelector('.text').innerText) {
             case 'Spanish':
                 langItems[i].querySelector('.text').innerText = 'Español (Spanish)';
-                break;
-            case 'Chinese (Simplified)':
-                langItems[i].querySelector('.text').innerText = '中文 (Chinese Simplified)';
+                langItems[i].addEventListener('click', function(e) { window.location = document.querySelector('input#es-path').value + '#googtrans(en|es)'; });
                 break;
             case 'Chinese (Traditional)':
                 langItems[i].querySelector('.text').innerText = '中文 (Chinese Traditional)';
+                langItems[i].addEventListener('click', function(e) { window.location = document.querySelector('input#zh-tw-path').value + '#googtrans(en|zh-tw)'; });
                 break;
             case 'Korean':
                 langItems[i].querySelector('.text').innerText = '한국어 (Korean)';
+                langItems[i].addEventListener('click', function(e) { window.location = document.querySelector('input#ko-path').value + '#googtrans(en|ko)'; });
                 break;
             case 'Vietnamese':
                 langItems[i].querySelector('.text').innerText = 'Tiếng Việt (Vietnamese)';
+                langItems[i].addEventListener('click', function(e) { window.location = document.querySelector('input#vi-path').value + '#googtrans(en|vi)'; });
                 break;
             case 'Japanese':
                 langItems[i].querySelector('.text').innerText = '日本語 (Japanese)';
+                langItems[i].addEventListener('click', function(e) { window.location = document.querySelector('input#ja-path').value + '#googtrans(en|ja)'; });
                 break;
             case 'Russian':
                 langItems[i].querySelector('.text').innerText = 'русский (Russian)';
+                langItems[i].addEventListener('click', function(e) { window.location = document.querySelector('input#ru-path').value + '#googtrans(en|ru)'; });
                 break;
             case 'Armenian':
                 langItems[i].querySelector('.text').innerText = 'Армянский (Armenian)';
+                langItems[i].addEventListener('click', function(e) { window.location = document.querySelector('input#hy-path').value + '#googtrans(en|hy)'; });
+                break;
+            case 'English':
+                langItems[i].addEventListener('click', function(e) { window.location = document.querySelector('input#en-path').value; });
                 break;
             case 'Select Language':
                 langItems[i].querySelector('.text').innerText = 'English';
@@ -141,7 +158,7 @@ window.addEventListener('load', function() {
             gframe.style.display = 'block';
             let navContainer = document.querySelector('.nav-container');
             let rect = navContainer.getBoundingClientRect();
-            gframe.style.top = rect.bottom + 'px';
+            gframe.style.top = (rect.bottom + 300) + 'px';
 
             if (window.innerWidth > 640) {
                 gframe.style.left = (window.innerWidth - 275) + 'px';

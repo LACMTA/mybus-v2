@@ -73,7 +73,9 @@ permalink: "all-changes/{{ allChanges.lang | slug }}/"
                             {% endcapture %}
                         {% endif %}
 
-                        {{ item.label }} - {{ item.description }}
+                        <span class="notranslate">
+                            {{ item.label }} - {{ item.description }}
+                        </span>
 
                         {% if item.description != "" %}
                             {% if item.newSchedule == "" %}
@@ -117,3 +119,12 @@ permalink: "all-changes/{{ allChanges.lang | slug }}/"
         </div>
     </div>
 </section>
+
+<input type="hidden" id="en-path" value="{{ '/all-changes/en/' | url }}">
+<input type="hidden" id="es-path" value="{{ '/all-changes/es/' | url }}">
+<input type="hidden" id="hy-path" value="{{ '/all-changes/hy/' | url }}">
+<input type="hidden" id="ja-path" value="{{ '/all-changes/ja/' | url }}">
+<input type="hidden" id="ko-path" value="{{ '/all-changes/ko/' | url }}">
+<input type="hidden" id="ru-path" value="{{ '/all-changes/ru/' | url }}">
+<input type="hidden" id="vi-path" value="{{ '/all-changes/vi/' | url }}">
+<input type="hidden" id="zh-tw-path" value="{{ '/all-changes/zh-tw/' | url }}">
