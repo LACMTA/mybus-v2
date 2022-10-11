@@ -14,7 +14,7 @@ permalink: "all-changes/{{ allChanges.lang | slug }}/"
 <section class="usa-section" id="all-header">
 	<div class="grid-container">
 		<div class="grid-row">
-			<h1>{{ allChanges.content.intro.header }}</h1>
+			<h1 class="notranslate">{{ allChanges.content.intro.header }}</h1>
 		</div>
 	</div>
 </section>
@@ -22,22 +22,22 @@ permalink: "all-changes/{{ allChanges.lang | slug }}/"
 <section class="usa-section" id="all-summary">
 	<div class="grid-container">
 		<div class="grid-row">
-			<p class="text-bold">{{ allChanges.content.intro.details }}</p>
+			<p class="text-bold notranslate">{{ allChanges.content.intro.details }}</p>
 			<div class="padding-x-4 padding-bottom-2">
 				{{ allChanges.content.takeones.description }}
                 {% for i in (0..7) %}
                     {% if i == 7 %}
-						<a href="{{ allChanges.content.takeones.files[i].url | url }}">{{ allChanges.content.takeones.files[i].text }}</a>.
+						<a href="{{ allChanges.content.takeones.files[i].url | url }}" class="notranslate">{{ allChanges.content.takeones.files[i].text }}</a>.
                     {% else %}
-						<a href="{{ allChanges.content.takeones.files[i].url | url }}">{{ allChanges.content.takeones.files[i].text }}</a>, 
+						<a href="{{ allChanges.content.takeones.files[i].url | url }}" class="notranslate">{{ allChanges.content.takeones.files[i].text }}</a>, 
                     {% endif %}
                 {% endfor %}
 
 			</div>
             <div>
                 {% for item in allChanges.content.summary %}
-                    <p class="text-bold">{{ item.description }}</p>
-                    <div class="padding-x-4 padding-bottom-2">
+                    <p class="text-bold notranslate">{{ item.description }}</p>
+                    <div class="padding-x-4 padding-bottom-2 notranslate">
                         {{ item.details }}
                     </div>
                 {% endfor %}
