@@ -53,46 +53,44 @@ permalink: "all-changes/{{ allChanges.lang | slug }}/"
 			{% for item in allChanges.content.details %}
                 {% if item.label != "" %}
                     <div class="padding-y-4">
+                        {% if item.label contains '0' or 
+                              item.label contains '1' or 
+                              item.label contains '2' or
+                              item.label contains '3' or
+                              item.label contains '4' or
+                              item.label contains '5' or
+                              item.label contains '6' or
+                              item.label contains '7' or
+                              item.label contains '8' or
+                              item.label contains '9'
+                        %}
+                            {% capture newLabel %}
+                                Line {{ item.label }}
+                            {% endcapture %}
+                        {% else %}
+                            {% capture newLabel %}
+                                the {{ item.label }}
+                            {% endcapture %}
+                        {% endif %}
+
                         {{ item.label }} - {{ item.description }}
 
                         {% if item.description != "" %}
                             {% if item.newSchedule == "" %}
                                 New schedule coming soon.
                             {% else %}
-                                <a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for the {{ item.label }}</a>.
+                                <a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule PDF for {{ newLabel }}</a>.
                             {% endif %}
                         {% else %}
                             {% if item.newSchedule != "" %}
-                                <a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for the {{ item.label }}</a>.
+                                Minor edits to content and/or map, no changes to the schedule.
+                                <a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new PDF for {{ newLabel }}</a>.
                             {% elsif item.currentSchedule != "" %}
-                                No changes that affect schedule. 
-                                <a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for the {{ item.label }}</a>.
+                                No changes to the schedule. 
+                                <a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule PDF for {{ newLabel }}</a>.
                             {% else %}
                                 No schedule available.
                             {% endif %}
-                        {% endif %}
-                    </div>
-                {% elsif item.description != "" %}
-                    <div class="padding-y-4">
-                        {{ item.description }}
-                        {% if item.newSchedule != "" %}
-                        <a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for Line {{ item.label
-                            }}</a>.
-                            {% elsif item.currentSchedule != "" %}
-                        <a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for Line {{
-                            item.label }}</a>.
-                        {% endif %}
-                    </div>
-                {% else %}
-                    <div class="padding-y-4">
-                        {{ item.label }} - 
-                        {% if item.newSchedule != "" %}
-                        <a href="{{ item.newSchedule | url }}" class="scheduleLink">Download new schedule for Line {{ item.label
-                            }}</a>.
-                        {% elsif item.currentSchedule != "" %}
-                        No changes that affect schedule. 
-                        <a href="{{ item.currentSchedule | url }}" class="scheduleLink">Download current schedule for Line {{
-                            item.label }}</a>.
                         {% endif %}
                     </div>
                 {% endif %}
