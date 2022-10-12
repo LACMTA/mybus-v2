@@ -17,7 +17,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
     - name: Use Node.js 12.x
       uses: actions/setup-node@v2
       with:
@@ -32,9 +35,7 @@ jobs:
     - name: List files
       run: ls -lR
     - name: Commit and push changes
-      run: |
-        git config --global user.name "matikin9"
-        git config --global user.email "matikin9@gmail.com"
-        git add .
-        git commit -am 'Auto clean and build site'
-        git push -f
+      uses: actions-go/push@master
+      with:
+        commit-message: '[Auto] clean and build site'
+        remote: origin

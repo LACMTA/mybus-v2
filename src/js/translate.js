@@ -43,28 +43,35 @@ function styleGT() {
         .goog-te-menu2-item div,
         .goog-te-menu2-item:link div,
         .goog-te-menu2-item:visited div,
-        .goog-te-menu2-item:active div,
-        .goog-te-menu2-item-selected div,
-        .goog-te-menu2-item-selected:link div,
-        .goog-te-menu2-item-selected:visited div,
-        .goog-te-menu2-item-selected:active div{
+        .goog-te-menu2-item:active div {
             background: transparent;
             letter-spacing: .35px;
             padding: 16px;
             font-family: 'Open Sans', sans-serif;
             font-style: normal;
             font-weight: 600;
-            font-size: 16px;
             line-height: 130%;
             color: #5E6871;
         }
+        .goog-te-menu2-item-selected div,
+        .goog-te-menu2-item-selected:link div,
+        .goog-te-menu2-item-selected:visited div,
+        .goog-te-menu2-item-selected:active div{
+            letter-spacing: .35px;
+            padding: 16px;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 130%;
+            color: #ECECEC;
+            background: #555;
+        }
+
         .goog-te-menu2-item-selected .text{
             font-family: 'Open Sans', sans-serif;
             font-weight: 600;
             font-style: normal;
-            font-size: 16px;
             line-height: 130%;
-            color: #5E6871;
         }
         .goog-te-menu2-item-selected .indicator{
             display:none;
