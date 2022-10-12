@@ -4,20 +4,17 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: 
-      - main 
   pull_request:
+  push:
     branches:
       - main
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
+    - name: Checkout Repo
       uses: actions/checkout@v2
       with:
         ref: ${{ github.head_ref }}
@@ -32,10 +29,7 @@ jobs:
       run: npm run prod:build
     - name: Copy CNAME to docs/
       run: cp CNAME docs/
-    - name: List files
-      run: ls -lR
     - name: Commit and push changes
-      uses: actions-go/push@master
+      uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit-message: '[Auto] clean and build site'
-        remote: origin
+        commit_message: '[Auto] clean and build site for prod'
