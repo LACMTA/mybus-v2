@@ -32,4 +32,4 @@ jobs:
     - name: Commit and push changes
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit-message: '[Auto] clean and build site for prod'
+        commit_message: '[Auto] clean and build site for prod'
