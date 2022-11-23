@@ -219,7 +219,7 @@ function clickRequestTransitPreview() {
 }
 
 function clickRequestAllChanges() {
-    lang = getLanguage();
+    lang = getLanguage().toLowerCase();
 
     lang = lang == '' ? 'en' : lang;
 

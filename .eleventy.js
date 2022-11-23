@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/files");
 	eleventyConfig.addPassthroughCopy("assets/uswds");
 	eleventyConfig.addPassthroughCopy("CNAME");
+	eleventyConfig.addPassthroughCopy("favicon.ico");
 
 	return {
 		pathPrefix: isProduction ? "" : "/mybus-v2/",
